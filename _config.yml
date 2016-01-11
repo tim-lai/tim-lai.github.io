@@ -6,7 +6,7 @@ url: "http://tim-lai.github.io" # the base hostname & protocol for your site
 theme:
   # Meta
   title: tim-lai.github.io
-  avatar: avatar.png
+  avatar: tlai-headshot.png
   gravatar:  # Email MD5 hash
   description: "Tips, tricks, and portfolio of a full stack javascript web developer" # used by search engines
 
