@@ -6,7 +6,7 @@ This is a quick guide on how to setup and configure for React v0.14, Babel 6, an
 
 This guide is based on my recent web app, TypeReact. You can view the site at [typereact.com](http://typereact.com). Source code can be found [here](https://github.com/typereact/typereact). TypeReact also uses React-Redux and React-Router, both of which support and take advantage of ES6.
 
-###package.json
+#### package.json
 To run ES6, you will want to `npm install --save` the following:
 
 ~~~javascript
@@ -39,7 +39,7 @@ If you are not using Webpack, it is also possible to set the Babel configuration
 ~~~
 
 
-####webpack.config.js
+#### webpack.config.js
 For webpack, continue to use `babel-loader`. However you also will need to let Babel know to query plugins and presets:
 
 ~~~javascript
@@ -59,7 +59,7 @@ module: {
 ~~~
 
 
-####React v0.14 tip
+#### React v0.14 tip
 React v0.14 was released 10/6/2015.
 
 One notable change for React v0.14 from earlier versions is the separation of react and reactDOM dependencies. Basically, instead of rendering with `react.render()`, it is now `reactDOM.render()`. Not updating this change probably won't break your app, but you will get warning messages in your console and helpful suggestions to refactor your code.
