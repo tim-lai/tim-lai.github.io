@@ -9,14 +9,14 @@ This guide is based on my recent web app, TypeReact. You can view the site at [t
 #### package.json
 To run ES6, you will want to `npm install --save` the following:
 
-~~~javascript
+```javascript
 "babel-polyfill": "^6.3.14",
 "babel-runtime": "^6.3.13",
-~~~
+```
 
 In your dev dependencies, you will want to `npm install --save-dev` the following:
 
-~~~javascript
+```javascript
 "babel": "^6.3.13",
 "babel-cli": "^6.3.13",
 "babel-core": "^6.3.13",
@@ -25,24 +25,24 @@ In your dev dependencies, you will want to `npm install --save-dev` the followin
 "babel-plugin-transform-runtime": "^6.3.13",
 "babel-preset-es2015": "^6.3.13",
 "babel-preset-react": "^6.3.13",
-~~~
+```
 
 If you are not using Webpack, it is also possible to set the Babel configuration in `package.json`. However, pick one or the other, not both.
 
-~~~javascript
+```javascript
 "babel": {
   "presets": [
     "es2015",
     "react"
   ]
 }
-~~~
+```
 
 
 #### webpack.config.js
 For webpack, continue to use `babel-loader`. However you also will need to let Babel know to query plugins and presets:
 
-~~~javascript
+```javascript
 module: {
   loaders: [
     { 
@@ -56,7 +56,7 @@ module: {
     },
   ]
 }
-~~~
+```
 
 
 #### React v0.14 tip

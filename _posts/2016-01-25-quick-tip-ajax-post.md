@@ -8,7 +8,7 @@ The contentType is the key:value pair that makes POST work.
 
 Example code snippet:  
 
-~~~javascript
+```javascript
 $.ajax({
   type: "POST",
   url: '/testurl',
@@ -16,4 +16,4 @@ $.ajax({
   success: function() {console.log('hooray')},
   contentType: 'application/json'   // IMPORTANT!!!
 });
-~~~
+```

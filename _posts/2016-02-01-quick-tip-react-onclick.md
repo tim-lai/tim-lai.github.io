@@ -8,12 +8,12 @@ Simply, the value for your onClick attribute should be a function, not a funct
 
 Example code snippet:
 
-~~~javascript
+```javascript
 <button type="submit" onClick={() => { this.props.removeTaskFunction(todo) }}>Submit</button>
-~~~
+```
 
 Or for non-ES6 code:
 
-~~~javascript
+```javascript
 <button type="submit" onClick={function(){removeTaskFunction(todo)}}>Submit</button>
-~~~
+```
