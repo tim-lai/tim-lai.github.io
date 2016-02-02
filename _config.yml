@@ -2,6 +2,10 @@
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://tim-lai.github.io" # the base hostname & protocol for your site
 
+# gems: [jekyll-paginate]
+gems:
+ - jekyll-paginate
+
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
@@ -67,7 +71,11 @@ paginate_path: "blog/page:num"
 
 # BUILD SETTINGS
 markdown: kramdown
-highlighter: pygments
+# kramdown:
+  # input: GFM
+  # hard_wrap: true
+# highlighter: rouge   #github pages does not allow overwrite of this property
+# highlighter: pygments  #no longer supported by github pages
 sass:
   sass_dir: _sass
   style: :compressed

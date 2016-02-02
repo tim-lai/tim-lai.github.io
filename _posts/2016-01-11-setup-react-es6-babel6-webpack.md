@@ -6,17 +6,17 @@ This is a quick guide on how to setup and configure for React v0.14, Babel 6, an
 
 This guide is based on my recent web app, TypeReact. You can view the site at [typereact.com](http://typereact.com). Source code can be found [here](https://github.com/typereact/typereact). TypeReact also uses React-Redux and React-Router, both of which support and take advantage of ES6.
 
-####package.json
+###package.json
 To run ES6, you will want to `npm install --save` the following:
 
-{% highlight js %}
+~~~javascript
 "babel-polyfill": "^6.3.14",
 "babel-runtime": "^6.3.13",
-{% endhighlight %}
+~~~
 
 In your dev dependencies, you will want to `npm install --save-dev` the following:
 
-{% highlight js %}
+~~~javascript
 "babel": "^6.3.13",
 "babel-cli": "^6.3.13",
 "babel-core": "^6.3.13",
@@ -25,24 +25,24 @@ In your dev dependencies, you will want to `npm install --save-dev` the followin
 "babel-plugin-transform-runtime": "^6.3.13",
 "babel-preset-es2015": "^6.3.13",
 "babel-preset-react": "^6.3.13",
-{% endhighlight %}
+~~~
 
 If you are not using Webpack, it is also possible to set the Babel configuration in `package.json`. However, pick one or the other, not both.
 
-{% highlight js %}
+~~~javascript
 "babel": {
   "presets": [
     "es2015",
     "react"
   ]
 }
-{% endhighlight %}
+~~~
 
 
 ####webpack.config.js
 For webpack, continue to use `babel-loader`. However you also will need to let Babel know to query plugins and presets:
 
-{% highlight js %}
+~~~javascript
 module: {
   loaders: [
     { 
@@ -56,7 +56,7 @@ module: {
     },
   ]
 }
-{% endhighlight %}
+~~~
 
 
 ####React v0.14 tip
